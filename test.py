@@ -1,10 +1,10 @@
-from rrpacket import RRP
+from hrpgen import HRPG
 
-rrp = RRP()
-rrp.set_url("http://google.co.kr/a.html")
-rrp.set_method("GET")
-rrp.set_headers({
+hrpg = HRPG()
+hrpg.set_url("http://google.co.kr/a.html")
+hrpg.set_method("GET")
+hrpg.set_headers({
 	"user-agent": "hihi"
 	})
-rrp.set_headers("content-type", "application/json")
-rrp.generate_raw_packet()
+hrpg.set_headers("content-type", "application/json")
+hrpg.generate_raw_packet()
