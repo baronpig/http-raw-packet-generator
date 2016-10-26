@@ -1,4 +1,5 @@
 from urlparse import urlparse
+from socket import socket
 
 class HRPG(object):
 
